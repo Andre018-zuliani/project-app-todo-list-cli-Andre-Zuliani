@@ -21,34 +21,35 @@ Aplikasi ini memungkinkan pengguna mengelola daftar tugas secara lokal menggunak
 ---
 
 ## 📂 Struktur Project
-project-app-todo-list-cli-nama/
-├── cmd/
-│ ├── add.go
-│ ├── list.go
-│ ├── delete.go
-│ ├── done.go
-│ ├── search.go
-│ └── root.go
-├── data/
-│ └── todo.json
-├── model/
-│ └── task.go
-├── service/
-│ └── todo_service.go
-├── utils/
-│ └── validation.go (optional)
-├── go.mod
-├── go.sum
-└── main.go
+📁 project-app-todo-list-cli-nama/
+├── 📂 cmd/
+│   ├── 📝 add.go
+│   ├── 📝 list.go
+│   ├── 📝 delete.go
+│   ├── 📝 done.go
+│   ├── 📝 search.go
+│   └── 📝 root.go
+├── 📂 data/
+│   └── 📄 todo.json
+├── 📂 model/
+│   └── 🧩 task.go
+├── 📂 service/
+│   └── ⚙️ todo_service.go
+├── 📂 utils/
+│   └── 🔧 validation.go  (optional)
+├── 📄 go.mod
+├── 📄 go.sum
+└── 🚀 main.go
 
----
+
 
 ## 🚀 Cara Install & Setup
 
 ### 1. Clone repository
 ```bash
 git clone https://github.com/USERNAME/project-app-todo-list-cli-nama.git
-cd project-app-todo-list-cli-nama
+cd project-app-todo-list-cli-nama```
+
 2. Install dependency Cobra
 go get -u github.com/spf13/cobra
 go get -u github.com/fatih/color
@@ -65,7 +66,7 @@ Atau versi singkat:
 
 go run . add "Belajar Go"
 
-📋 Tampilkan daftar tugas
+# 📋 Tampilkan daftar tugas
 go run . list
 
 
