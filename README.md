@@ -1,4 +1,4 @@
-Video Youtube Presentasi:
+Video Youtube Presentasi: https://youtu.be/LkBtjl8uAXc 
 
 # 📝 To-Do List CLI App (Golang + Cobra)
 
