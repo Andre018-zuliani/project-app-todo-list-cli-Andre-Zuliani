@@ -21,25 +21,30 @@ Aplikasi ini memungkinkan pengguna mengelola daftar tugas secara lokal menggunak
 ---
 
 ## 📂 Struktur Project
-📁 project-app-todo-list-cli-nama/
-├── 📂 cmd/
-│   ├── 📝 add.go
-│   ├── 📝 list.go
-│   ├── 📝 delete.go
-│   ├── 📝 done.go
-│   ├── 📝 search.go
-│   └── 📝 root.go
-├── 📂 data/
-│   └── 📄 todo.json
-├── 📂 model/
-│   └── 🧩 task.go
-├── 📂 service/
-│   └── ⚙️ todo_service.go
-├── 📂 utils/
-│   └── 🔧 validation.go  (optional)
-├── 📄 go.mod
-├── 📄 go.sum
-└── 🚀 main.go
+project-app-todo-list-cli-nama/
+├── cmd/             
+│   ├── root.go      # Perintah dasar Cobra
+│   ├── add.go       # Perintah 'todo add'
+│   ├── list.go      # Perintah 'todo list'
+│   ├── delete.go    # Perintah 'todo delete'
+│   ├── done.go      # Perintah 'todo done' (atau update)
+│   └── search.go    # Perintah 'todo search'
+|
+├── data/            
+│   └── todo.json    # File penyimpanan data
+|
+├── model/           
+│   └── task.go      # Definisi struct Task dan TodoList
+|
+├── service/         
+│   └── todo_service.go # Logika bisnis (Load/Save/Add/Update/Delete)
+|
+├── utils/           
+│   └── validation.go # Fungsi utilitas (e.g., validasi status)
+|
+├── go.mod           # File manajemen modul Go
+├── go.sum           # File checksum modul Go
+└── main.go          # Titik masuk utama program
 
 
 
